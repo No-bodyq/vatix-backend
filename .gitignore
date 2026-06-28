@@ -30,3 +30,7 @@ vrickish_issues.md
 
 # Local notes (personal planning docs — never committed)
 /notes/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
