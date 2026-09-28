@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "node init && tsx watch src/index.ts",
     "indexer:dev": "tsx watch apps/indexer/src/main.ts",
     "indexer:start": "tsx apps/indexer/src/main.ts",
     "workers:finalization:dev": "tsx watch apps/workers/src/finalization/main.ts",
@@ -26,8 +26,8 @@
     "workers:filter:start": "pnpm --filter @vatix/workers start",
     "api:filter:dev": "pnpm --filter @vatix/api dev",
     "api:filter:start": "pnpm --filter @vatix/api start",
-    "build": "tsc",
-    "start": "tsx src/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && tsx src/index.ts",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
@@ -81,17 +81,17 @@
     "zod": "^4.6.5"
   },
   "devDependencies": {
-    "@types/node": "^25.0.9",
+    "@types/node": "^26.6.2",
     "@types/pg": "^8.23.1",
-    "@vitest/coverage-v8": "4.0.17",
-    "@vitest/ui": "^4.0.17",
+    "@vitest/coverage-v8": "5.0.1",
+    "@vitest/ui": "^5.0.1",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.0",
+    "lint-staged": "^17.5.1",
     "nodemon": "^3.1.11",
-    "prettier": "^3.8.1",
-    "prisma": "^7.2.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.17"
+    "prettier": "^3.9.9",
+    "prisma": "^7.10.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
   },
   "lint-staged": {
     "*.ts": [
